@@ -1,6 +1,6 @@
 {
   "name": "@geektech/nest-core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Nest toolkit",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -24,7 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "@nestjs/axios": "^0.0.5",
-    "@nestjs/common": "^8.0.0",
+    "@nestjs/common": "^10.0.0",
     "cache-manager": "^5.2.3",
     "cache-manager-redis-yet": "^4.1.2",
     "class-transformer": "^0.5.1",
