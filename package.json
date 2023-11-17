@@ -1,6 +1,6 @@
 {
   "name": "@geektech/nest-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nest toolkit",
   "main": "./dist/index.js",
   "module": "./dist/index.js",

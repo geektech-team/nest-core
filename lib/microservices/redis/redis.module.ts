@@ -1,6 +1,7 @@
 import { ForwardReference } from "@nestjs/common";
 import { Type } from "@nestjs/common";
-import { DynamicModule, CACHE_MANAGER } from "@nestjs/common";
+import { DynamicModule } from "@nestjs/common";
+import { CACHE_MANAGER } from "@nestjs/common/cache";
 import { redisStore } from "cache-manager-redis-yet";
 import { RedisService } from "./redis.service";
 
