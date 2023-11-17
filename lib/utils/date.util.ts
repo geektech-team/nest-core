@@ -1,5 +1,7 @@
 export class DateUtil {
-  static TimeInOneDay = 24 * 60 * 60 * 1000;
+  static TimeInOneMinute = 60 * 1000;
+  static TimeInOneHour = 60 * DateUtil.TimeInOneMinute;
+  static TimeInOneDay = 24 * DateUtil.TimeInOneHour;
 
   static beginningOfDate(date: Date) {
     const result = new Date(date);
