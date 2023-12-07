@@ -4,8 +4,10 @@ export * from "./logger";
 // Filters
 export * from "./filter/server.exception.filter";
 // Decorators
-export * from "./decorators/pagination.query.decorators";
-export * from "./decorators/request.prop.decorators";
+export * from "./decorators/query.array.decorator";
+export * from "./decorators/query.boolean.decorator";
+export * from "./decorators/query.pagination.decorator";
+export * from "./decorators/request.prop.decorator";
 // Interceptors
 export * from "./interceptors/redis.cache.interceptor";
 export * from "./interceptors/limitation.interceptor";
