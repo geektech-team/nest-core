@@ -11,7 +11,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "prepare": "husky install"
+    "g:d": "nest g decorator",
+    "g:f": "nest g filter",
+    "g:pi": "nest g pipe",
+    "g:pr": "nest g provider",
+    "g:in": "nest g interceptor",
+    "g:mi": "nest g middleware",
+    "g:cl": "nest g class",
+    "g:interface": "nest g interface",
+    "g:gu": "nest g guard"
   },
   "repository": {
     "type": "git",
