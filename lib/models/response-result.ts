@@ -1,4 +1,4 @@
-import { ResponsePagination } from "./pagination.model";
+import { ResponsePagination } from "./pagination";
 
 export class ResponseResult {
   constructor(

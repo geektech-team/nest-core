@@ -1,5 +1,5 @@
 import { createParamDecorator, ExecutionContext } from "@nestjs/common";
-import { Pagination } from "../models/pagination.model";
+import { Pagination } from "../models/pagination";
 
 export const QueryPagination = createParamDecorator(
   (data: unknown, context: ExecutionContext) => {

@@ -1,5 +1,5 @@
-import { TOKEN_KEY } from './../constants';
-import { ServerExceptionCode } from './../enums/server.exception.enum';
+import { TOKEN_KEY } from '../constants';
+import { ServerExceptionCode } from '../enums/server-exception';
 import {
   CallHandler,
   ExecutionContext,
@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 import { logger } from '../logger';
 import {
   ServerException,
-} from '../models/server.exception.model';
+} from '../models/server-exception';
 import config from '../nest.config';
 
 const TokenKey = config[TOKEN_KEY];

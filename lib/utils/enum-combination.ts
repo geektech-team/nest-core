@@ -1,4 +1,4 @@
-import { EnumItem, EnumModel } from '../models/enum.model';
+import { EnumItem, EnumModel } from '../models/enum';
 
 export class EnumCombination {
   constructor(private enumModel: EnumModel) {}

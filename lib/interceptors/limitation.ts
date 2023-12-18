@@ -6,11 +6,11 @@ import {
   NestInterceptor,
   SetMetadata,
 } from '@nestjs/common';
-import { ServerExceptionCode } from '../enums/server.exception.enum';
+import { ServerExceptionCode } from '../enums/server-exception';
 import { Observable } from 'rxjs';
 import {
   ServerException,
-} from '../models/server.exception.model';
+} from '../models/server-exception';
 
 const REFLECTOR = 'Reflector';
 const LimitationMetadata = 'limitation';

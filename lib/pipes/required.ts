@@ -1,6 +1,6 @@
 import { PipeTransform, Injectable, ArgumentMetadata } from "@nestjs/common";
-import { ServerExceptionCode } from "../enums/server.exception.enum";
-import { ServerException } from "../models/server.exception.model";
+import { ServerExceptionCode } from "../enums/server-exception";
+import { ServerException } from "../models/server-exception";
 
 @Injectable()
 export class RequiredPipe implements PipeTransform {
