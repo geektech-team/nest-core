@@ -6,23 +6,6 @@
 
 ### Cache
 
-在项目的cyy.nest.config.json中配置
-```json
-{
-  "USER_ID_KEY": "USER_ID_KEY"
-}
-```
-否则默认使用 USER_ID_KEY
-
-### Token
-在项目的cyy.nest.config.json中配置
-```json
-{
-  "TOKEN_KEY": "TOKEN_KEY"
-}
-```
-否则默认使用 USER_ID_KEY
-
 ### Register in main.ts
 
 ```ts

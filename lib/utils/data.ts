@@ -14,7 +14,7 @@ export class DataUtil {
 
   static toArray<T>(value): T[] {
     if (!value) {
-      return null;
+      return value;
     }
     if (Array.isArray(value)) {
       return value;

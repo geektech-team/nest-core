@@ -3,10 +3,22 @@ export { ServerExceptionCode } from "./enums/server-exception";
 export * from "./logger";
 // Filters
 export * from "./filter/server-exception";
-// Decorators
-export * from "./decorators/query-array";
-export * from "./decorators/query-boolean";
-export * from "./decorators/query-date";
+// 
+/**
+ * Decorators
+ * 
+ * 自带装饰器:
+ * @Request()，@Req()	req
+ * @Response()，@Res()	res
+ * @Next()	next
+ * @Session()	req.session
+ * @Param(param?: string)	req.params / req.params[param]
+ * @Body(param?: string)	req.body / req.body[param]
+ * @Query(param?: string)	req.query / req.query[param]
+ * @Headers(param?: string)	req.headers / req.headers[param]
+ * @Ip()	req.ip
+ * @HostParam()	req.hosts
+ */
 export * from "./decorators/query-pagination";
 export * from "./decorators/request-prop";
 // Interceptors
@@ -19,9 +31,24 @@ export * from "./models/pagination";
 export * from "./models/response-result";
 export * from "./models/server-exception";
 export * from "./models/enum";
-// pipes
+/**
+ * Pipes
+ * 
+ * 自带管道:
+ * ValidationPipe
+ * ParseIntPipe
+ * ParseFloatPipe
+ * ParseBoolPipe
+ * ParseArrayPipe 有optional的问题
+ * ParseUUIDPipe
+ * ParseEnumPipe
+ * DefaultValuePipe
+ * ParseFilePipe
+ */
 export * from "./pipes/validation";
 export * from "./pipes/required";
+export * from "./pipes/string-to-date";
+export * from "./pipes/string-to-array";
 // Util
 export * from "./utils/data";
 export * from "./utils/date";
