@@ -5,7 +5,7 @@ const logger = createLogger({
   format: format.combine(
     format.colorize(),
     format.splat(),
-    format.label({ label: "bff" }),
+    // format.label({ label: "bff" }),
     format.timestamp({
       format: "YYYY-MM-DD HH:mm:ss",
     }),
@@ -16,9 +16,6 @@ const logger = createLogger({
   transports: [
     new transports.Console({ level: "debug" }),
     new transports.Console({
-      level: "info",
-    }),
-    new transports.Console({
       level: "error",
     }),
   ],
@@ -26,7 +23,7 @@ const logger = createLogger({
 
 class Logger implements LoggerService {
   log(message: any, ...optionalParams: any[]) {
-    logger.log("info", message);
+    logger.info(message);
   }
   error(message: any, ...optionalParams: any[]) {
     logger.error(message);
