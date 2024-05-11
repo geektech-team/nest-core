@@ -7,7 +7,7 @@ import {
 } from "@nestjs/common";
 import { CACHE_MANAGER } from "@nestjs/common/cache";
 import { Cache } from "cache-manager";
-import { logger } from "../logger";
+import logger from "../logger";
 import { of, tap } from "rxjs";
 
 @Injectable()
@@ -26,7 +26,7 @@ export class RedisCacheInterceptor implements NestInterceptor {
     }
     const value = await this.cacheManager.get(key);
     if (value) {
-      logger.info(`使用缓存: ${key}`);
+      logger.log(`使用缓存: ${key}`);
       return of(value);
     }
     return next.handle().pipe(

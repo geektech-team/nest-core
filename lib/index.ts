@@ -1,6 +1,7 @@
+
 export { ServerExceptionCode } from "./enums/server-exception";
 
-export * from "./logger";
+export * as logger from "./logger";
 // Filters
 export * from "./filter/server-exception";
 // 

@@ -1,7 +1,7 @@
 import { HttpService } from '@nestjs/axios';
 import {} from '@nestjs/axios';
 import { Inject, Injectable } from '@nestjs/common';
-import { logger } from '../../logger';
+import logger from '../../logger';
 import { EurekaDiscovery } from './eureka.discovery';
 
 export type Method =

@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { EurekaClient, Eureka } from 'eureka-js-client';
-import { logger } from '../../logger';
+import logger from '../../logger';
 
 @Injectable()
 export class EurekaDiscovery {

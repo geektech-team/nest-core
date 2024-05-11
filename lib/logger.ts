@@ -39,4 +39,4 @@ class Logger implements LoggerService {
   }
 }
 
-export { logger, Logger };
+export default new Logger();
