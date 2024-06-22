@@ -50,6 +50,7 @@ export * from "./pipes/validation";
 export * from "./pipes/required";
 export * from "./pipes/string-to-date";
 export * from "./pipes/string-to-array";
+export * from "./pipes/string-to-number-array";
 // Util
 export * from "./utils/data";
 export * from "./utils/date";

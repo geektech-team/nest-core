@@ -1,10 +1,21 @@
 import { ResponsePagination } from "./pagination";
 
+export class ResponseWithPagination {
+  constructor(
+    public items: unknown[],
+    public pagination: ResponsePagination
+  ) {}
+}
+
 export class ResponseResult {
   constructor(
-    public data: any,
-    public statusCode = 200,
-    public comments = "",
-    public pagination?: ResponsePagination
+    public data:
+      | unknown
+      | {
+          items: unknown[];
+          pagination: ResponsePagination;
+        },
+    public status = 200,
+    public message = ""
   ) {}
 }
