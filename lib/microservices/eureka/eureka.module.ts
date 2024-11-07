@@ -19,6 +19,7 @@ export interface EurekaServiceOptions {
 export interface EurekaModuleOptions {
   eureka: Eureka.EurekaClient.EurekaClientConfig;
   service: EurekaServiceOptions;
+  metadata: Record<string, string>;
   disableDiscovery?: boolean;
   disable?: boolean;
   global?: boolean;
@@ -109,7 +110,7 @@ function eurekaOf(options: EurekaModuleOptions): Provider {
         'name': 'MyOwn',
         '@class': 'com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo',
       },
-      metadata: {},
+      metadata: options.metadata,
     },
     eureka: options.eureka,
   });
