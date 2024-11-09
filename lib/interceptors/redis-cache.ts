@@ -39,7 +39,7 @@ export class RedisCacheInterceptor implements NestInterceptor {
   }
 
   // 如果有其他因素影响缓存，如用户id则应在应用层重写这个方法
-  trackBy(context: ExecutionContext): string | undefined {
+  protected trackBy(context: ExecutionContext): string | undefined {
     if (!this.isRequestCacheable(context)) {
       return undefined;
     }
