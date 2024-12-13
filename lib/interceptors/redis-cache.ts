@@ -7,7 +7,7 @@ import {
 } from "@nestjs/common";
 import { CACHE_MANAGER } from "@nestjs/common/cache";
 import { Cache } from "cache-manager";
-import logger from "../logger";
+import { logger } from "../logger";
 import { of, tap } from "rxjs";
 
 @Injectable()

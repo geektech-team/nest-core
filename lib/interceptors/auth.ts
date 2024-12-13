@@ -7,7 +7,7 @@ import {
   SetMetadata,
 } from "@nestjs/common";
 import { Observable } from "rxjs";
-import logger from "../logger";
+import { logger } from "../logger";
 import { ServerException } from "../models/server-exception";
 
 const REFLECTOR = "Reflector";

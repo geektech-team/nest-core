@@ -5,7 +5,7 @@ import {
   NestInterceptor,
 } from '@nestjs/common';
 import { Observable, tap } from 'rxjs';
-import logger from '../logger';
+import { logger } from '../logger';
 
 @Injectable()
 export class PerformanceInterceptor implements NestInterceptor {

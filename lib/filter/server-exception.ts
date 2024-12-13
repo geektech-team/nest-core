@@ -6,7 +6,7 @@ import {
 } from '@nestjs/common';
 import { Response } from 'express';
 import { ServerException } from '../models/server-exception';
-import logger from '../logger';
+import { logger } from '../logger';
 import { ResponseResult } from '../models/response-result';
 
 @Catch(ServerException)
